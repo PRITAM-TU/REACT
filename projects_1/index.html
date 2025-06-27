@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="box"></section>
+   
+    
+</body>
+<script>
+    document.body.style.backgroundColor="#262626";
+        document.body.style.Color="#487578";
+    const box_container=document.getElementById('box');
+    var div=0;
+for(let i=0;i<5;i++)
+{
+    div=document.createElement('div');
+    div.innerText=" Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi quos, soluta harum, nam sunt fuga eos odit, voluptatum quaerat quo aliquam exercitationem porro earum molestiae eum iste temporibus optio reiciendis";
+
+
+    div.style.color="white";
+    div.style.padding="5px 5px"
+    div.style.boxShadow="5px  5px 15px #458725";
+    div.style.borderRadius="5px"
+    div.style.background="#565658";
+    div.style.margin="20px"
+    div.style.textAlign="center";
+    div.style.cursor="pointer";
+    
+    
+    box_container.appendChild(div);
+}
+// box_container.children[0].style.background="red";
+
+const button=document.createElement('button');
+
+    button.innerText="submit";
+     button.id="btn";
+     button.style.color="white";
+      button.style.cursor="pointer";
+    button.style.backgroundColor="#212121";
+    button.style.boxShadow="2px 2px 50px #245414"
+    box_container.appendChild(button);
+ button.style.width="20%";
+  button.style.height="50px";
+   button.style.fontSize="20px";
+    button.style.borderRadius="10px";
+
+    let variable =true;
+  const call_1=document.querySelector('#btn').addEventListener('click',function(e)
+{
+  const btn=  document.querySelector("#btn");
+  if(variable===true)
+  {
+  btn.style.backgroundColor="#254584";
+  variable =false;
+   btn.style.boxShadow="5px  5px 10px #458725"
+
+  }
+
+else
+{
+btn.style.backgroundColor="#212121";
+ variable =true;
+ btn.style.boxShadow="5px  5px 10px #254185"
+
+}
+
+})  
+
+</script>
+</html>
