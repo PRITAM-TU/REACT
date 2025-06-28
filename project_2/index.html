@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- front add  -->
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="stylesheet" href="reesponsive.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Bree+Serif&family=Liter&family=National+Park:wght@200..800&family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+    <title>Game2.O</title>
+</head>
+<body>
+     
+   <div class="loading-screen">
+        <div class="loading-text">Loading Game2.O...</div>
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+    </div>
+    <!-- hading and game title -->
+    <header id="logo-title">
+        <div class="logo">
+            <img src="" alt="">
+        </div>
+        <div class="title">
+            Rook Paper Scissors
+        </div>
+
+    </header>
+    <!-- Hero section in game  -->
+    <section id="hero-section">
+    <h1>Created by Pritam Tung</h1>
+    <div class="container">
+        <div class="box_1">
+            <img src="image/rook.jpeg" alt="loding image " class="hand-symbol">
+            <div>
+                 <button class="btn" id="btn_1">Option-1</button>
+            </div>
+        </div>
+        <div class="box_1">
+                 <img src="image/paper.jpeg" alt="loding image " class="hand-symbol">
+            <div>
+                 <button class="btn" id="btn_2">Option-2</button>
+            </div>
+        </div>
+        <div class="box_1">
+             <img src="image/scissors.jpeg" alt="loding image " class="hand-symbol">
+        <div id="btn_pos">
+                 <button class="btn" id="btn_3">Option-3</button>
+            </div>
+        </div>
+        
+    </div>
+    <div id="result">
+        
+    </div>
+    <div class="Restart">
+        <button id="btn_4">
+            RESTART GAME2.O
+        </button>
+    </div>
+    <!-- imogi send  -->
+     <div class="imoge">
+        <ul>
+         <li>Choose your move by clicking the buttons</li>
+            <li>The computer will randomly select its move</li>
+            <li>See who wins based on the emoji rules below</li>
+            </ul>
+     </div>
+
+
+</section>
+    <!-- How it is work -->
+     <section id="How-Work">
+         <div class="rules-container">
+        <h1 class="h1_1">Rock Paper Scissors Rules</h1>
+        
+        <h2 >Basic Rules</h2>
+        <ul>
+            <li>Players simultaneously choose one of three options: Rock, Paper, or Scissors</li>
+            <li>The game has three possible outcomes: win, lose, or draw</li>
+            <li>Standard gameplay is best of 3 or best of 5 rounds</li>
+        </ul>
+        
+        <h2>Winning Combinations</h2>
+        <div class="winning-pairs">
+            <div class="pair">
+                <span class="emoji">✊</span>
+                <span>Rock</span>
+                <div class="vs">beats</div>
+                <span class="emoji">✌️</span>
+                <span>Scissors</span>
+            </div>
+            
+            <div class="pair">
+                <span class="emoji">✋</span>
+                <span>Paper</span>
+                <div class="vs">beats</div>
+                <span class="emoji">✊</span>
+                <span>Rock</span>
+            </div>
+            
+            <div class="pair">
+                <span class="emoji">✌️</span>
+                <span>Scissors</span>
+                <div class="vs">beats</div>
+                <span class="emoji">✋</span>
+                <span>Paper</span>
+            </div>
+        </div>
+        
+        <h2>Additional Rules</h2>
+        <ul>
+            <li>If both players choose the same option, it's a tie and the round is replayed</li>
+            <li>Players must make their choice within the time limit (typically 3 seconds)</li>
+            <li>Some variations include Lizard and Spock for more complexity</li>
+        </ul>
+        
+        <h2>How to Play</h2>
+        <ol>
+            <li>Players stand facing each other</li>
+            <li>On the count of three, players simultaneously form one of the three shapes</li>
+            <li>Determine the winner based on the combinations above</li>
+            <li>The first player to win the majority of rounds (2/3 or 3/5) wins the game</li>
+        </ol>
+    </div>
+
+     </section>
+    
+     <!-- footer section -->
+    <section class="footer-para">
+      <footer >
+         <div class="container_1">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="#" class="logo_1">Game<span>2.O </span></a>
+                    <p></p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p> &copy; 2025 VerifyMail. All rights reserved.</p>
+                
+            </div>
+         </div>
+
+      </footer>
+    </section>
+    
+</body>
+<script src="script.js"></script>
+</html>
